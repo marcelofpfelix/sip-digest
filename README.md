@@ -20,5 +20,10 @@ felix@bandonga:~$ python sip_digest.py
 Response Encrypted: 4339495f0502e3dceed0357db619afec
 ```
 
+you should compare the `Response Encrypted` with the `response` in the Authorization Header, from the SIP REGISTER message.
+
+```
+Authorization:  Digest realm="phone.plivo.com", nonce="Xck7cV3JOkWQIcDRg6dcUj0R7LjCB77A", username="marcelofpfelix",  uri="sip:phone.plivo.com", response="4339495f0502e3dceed0357db619afec"  
+```
 
 * follwing the article https://nickvsnetworking.com/reverse-md5-on-sip-auth/
